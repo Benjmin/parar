@@ -1,0 +1,96 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="index.css"></link>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src = "application.js"></script>
+</head>
+<body class = "grey" onload = "Setupi()">
+<h1 id = "title"> pAR-R 3D Model</h1> 
+<div id="top_right" class = "white">
+<div class = " centered">
+<h2>
+Schall, Ben
+</h2>
+<h2>
+Per. 6
+</h2>
+<h2>
+2013/03/28
+</h2>
+</div>
+</div>
+<div id="top_left" class = "white" >
+<h2 class = "centered"> Info </h2>
+<p id = "i0" class = "itext">
+item: pARA-R<br>
+length: 702 bp<br>
+This plasmid is genetically engineered to allow scientist to produce a mutant Red Flourescent Protein. It contains control elements as well and is the subject of the model. 
+</p>
+<p id = "i1" class = "itext"> 
+item: rfp<br>
+length: 702<br>
+This gene is called Red Flourescent Protein(rfp). Rfp is found in Discosoma sp., a sea urchin. This gene is what we as a class are experimenting with and is extracted using BamH I and Hind III.
+</p>
+<p id = "i2" class = "itext"> 
+item: ampr<br>
+length: ?<br>
+This gene is called the ampicillin resistance gene(ampr). It provides the bacteria with resistance against penicillin and is one of the control elements in the pARA-R plasmid.
+</p>
+</div>
+<iframe id = "base" src="genome/index.html" height = "50%" width = "50%" class ="pause sequenceintro" ></iframe>
+<div id = "model">
+<iframe frameborder="0" id = "dmodel"  class ="pause" height="480" width="854" allowFullScreen webkitallowfullscreen="true" mozallowfullscreen="true" src="http://skfb.ly/54jidc0b?autostart=0&transparent=0&autospin=0&controls=1&watermark=1"></iframe>
+</div>
+<div id = "bottom_right" class = "white">
+<table id = "resenz" border = 1>
+<tr>
+<th> Source </th>
+<th> Restriction Enzyme </th>
+<th> Recognition Sequence </th>
+</tr>
+<tr>
+<td>Bacillus 
+amyloliquefaciens</td>
+<td> BamH I </td>
+<td> 5
+'
+G G A T C C
+3
+'
+3
+'
+C C T A G G
+5
+'
+</td>
+</tr>
+<tr>
+<td>
+Haemophilus
+influenzae
+</td>
+<td>
+Hind III
+</td>
+<td>
+5
+'
+A A G C T T
+3
+'
+3
+'
+T T C G A A
+5'
+</td>
+</tr>
+</table> 
+</div>
+<div id = "bottom_left" class = "white">
+<button type ="button" id = "b1" class ="button" onclick ="toggleInfo1();">pARA-R</button>
+<button type ="button" id = "b2" class ="button" onclick ="toggleInfo2();">rfp</button>
+<button type ="button" id = "b3" class ="button" onclick ="toggleInfo3();">ampr</butto>
+</div>
+<button type="button" id = "sequence" class = "button" onclick="Sequence();">Sequence</button>
+</body>
+</html>

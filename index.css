@@ -1,0 +1,158 @@
+body{
+z-index: -1;
+}
+.grey{
+background-color: grey;
+}
+.white{
+background-color: white;
+}
+.centered{
+text-align:center;
+}
+.itext{
+position: absolute;
+left: 7%;
+width: 75%;
+height: 55%;
+top: 25%;
+border-right: solid;
+border-left: solid;
+border-top: solid;
+border-bottom: solid;
+font-size: 12px;
+}
+#base{
+position:absolute;
+top: 32%;
+left: 27%;
+height: 40%;
+width: 555px;
+}
+.pause{
+animation-play-state:paused;
+}
+.resume{
+animation-play-state:running;
+}
+#dmodel{
+position:absolute;
+top: 32%;
+left: -555px;
+height: 40%;
+width: 555px;
+animation-duration: 3s;
+animation-name: slideouta;
+ animation-iteration-count: 1;
+animation-direction: alternate; 
+}
+.sequenceintro{
+  animation-duration: 3s;
+  animation-name: slideina;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes slideina{
+  from {
+    left: 100%;
+  }
+  to {
+  left: 27%;
+  }
+}
+@keyframes slideouta{
+  from {
+    left: 27%;
+  }
+  to {
+    left: -555px;
+  }
+}
+#resenz{
+font-size: 13px;
+top: 25%;
+}
+#title{
+position:relative;
+z-index: 2;
+text-align: left;
+left: 40%;
+width: 25%
+}
+#b1{
+position:absolute;
+left:30%;
+}
+#b2{
+position: absolute;
+left: 40%;
+top: 30%;
+}
+#b3{
+position:absolute;
+left: 35%;
+top: 60%;
+}
+#top_right{
+position:absolute;
+left: 0%;
+top: 0;
+width: 27%;
+height: 27%;
+border-right: double;
+border-bottom: double;
+border-width: 25px;
+}
+#top_left{
+position:absolute;
+top: 0%;
+left: 74%;
+width: 26%;
+height: 25%;
+border-bottom: double;
+border-left: double;
+border-width: 25px;
+}
+#bottom_right{
+position:absolute;
+left:0%;
+top: 75%;
+width: 27%;
+height: 25%;
+border-right: double;
+border-top: double;
+border-width: 25px;
+}
+#bottom_left{
+position: absolute;
+top: 75%;
+left: 75%;
+width: 25%;
+height: 25%;
+border-top: double;
+border-left: double;
+border-width: 25px;
+}
+#sequence{
+position: absolute;
+left: 45%;
+width: auto;
+height: auto;
+top: 80%;
+}
+.button {
+    font-size: 26px;
+   
+    display: inline-block;
+
+
+    cursor: pointer;
+    border-radius: 8px 8px 8px 8px;
+    background: linear-gradient(rgb(238, 94, 61), rgb(204, 53, 18) 70%) repeat scroll 0% 0% transparent;
+    box-shadow: 0px 1px 0px rgb(244, 152, 131) inset;
+    border: 1px solid rgb(181, 47, 16);
+    color: white;
+    text-shadow: 0px -1px 0px rgb(150, 39, 13);
+}
+
+
