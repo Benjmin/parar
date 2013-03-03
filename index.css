@@ -25,49 +25,19 @@ font-size: 12px;
 #base{
 position:absolute;
 top: 32%;
-left: 27%;
+left: 100%;
 height: 40%;
 width: 555px;
-}
-.pause{
-animation-play-state:paused;
-}
-.resume{
-animation-play-state:running;
 }
 #dmodel{
 position:absolute;
 top: 32%;
-left: -555px;
+left: 27%;
 height: 40%;
 width: 555px;
-animation-duration: 3s;
-animation-name: slideouta;
- animation-iteration-count: 1;
-animation-direction: alternate; 
+
 }
-.sequenceintro{
-  animation-duration: 3s;
-  animation-name: slideina;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-}
-@keyframes slideina{
-  from {
-    left: 100%;
-  }
-  to {
-  left: 27%;
-  }
-}
-@keyframes slideouta{
-  from {
-    left: 27%;
-  }
-  to {
-    left: -555px;
-  }
-}
+
 #resenz{
 font-size: 13px;
 top: 25%;
